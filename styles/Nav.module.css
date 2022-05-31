@@ -1,0 +1,72 @@
+.mobile {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .desktopContainer {
+    visibility: hidden;
+  }
+
+  .mobile {
+    visibility: visible;
+  }
+}
+
+.desktopContainer {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+/* .desktopContainer li {
+  display: inline;
+  margin: 10px;
+  text-decoration: underline;
+} */
+
+.desktopNavItem {
+  /* width: fit-content; */
+  border: none;
+  border-radius: 0.4rem;
+  padding: 6px;
+  margin: 0;
+  transform: translateX(+12px);
+}
+
+.desktopContainer .desktopNavItem:hover {
+  background-color: #f7f7f7;
+}
+
+.borgor {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 3;
+}
+
+.borgorContianer {
+  height: 30px;
+  width: 30px;
+}
+
+.mobileOpen {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.x {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+}
